@@ -1,0 +1,998 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    background-image: url(../photos/bg.png);
+}
+
+.follow{
+    height: fit-content;
+}
+
+nav .user .follow a{
+    line-height: unset !important;
+}
+
+nav .links{
+    position: relative;
+}
+
+nav .sub-links {
+    display: none;
+}
+
+nav .sub-links .text-left{
+    text-align: center;
+}
+
+nav .wide{
+    display: none;
+}
+
+nav .exp-btn{
+    display: none;
+}
+
+nav .exp {
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    border-left: 2px solid #fff;
+}
+
+#serve:checked ~ #serve-all{
+    display: grid;
+}
+
+#train:checked ~ #train-all{
+    display: grid;
+}
+
+#com:checked~#com-all {
+    display: grid;
+}
+
+nav .sub-links .sub-links-link{
+    border: 1px solid #fff;
+}
+
+@media all and (min-width: 760px) {
+    nav .wide {
+        display: initial;
+    }
+
+    nav .exp, nav .exp-btn{
+        display: none;
+    }
+
+    .nav-links .links {
+        position: relative;
+    }
+
+    nav .sub-links{
+        display: none;
+    }
+
+    nav .links:hover .sub-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+    }
+
+    nav .sub-links {
+        position: absolute;
+        margin: auto;
+        top: 51px;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+    nav .sub-links .sub-links-link{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        border: none;
+    }
+
+    nav .sub-links .sub-links-link a{
+        padding: 10px;
+    }
+
+    nav .sub-links-link a:after{
+        display: none;
+    }
+
+    nav .sub-links .text-left {
+        text-align: left;
+    }
+}
+
+#home-landing{
+    background-image: url(../photos/consulting.jpeg);
+}
+
+#service-landing{
+    background-image: url(/photos/consultancy.jpg);
+}
+
+#brand-el {
+    background-image: url(/photos/branding-samples02.jpg);
+}
+
+#branding-midpoint {
+    background-image: url(/photos/marketing_digital_branding02.jpg);
+}
+
+#power-el{
+    background-image: url(/photos/power-bg.jpg);
+}
+
+#power-midpoint {
+    background-image: url(/photos/life-light02.jpg);
+}
+
+#furnish-el{
+    background-image: url(/photos/space-saving-office.jpg);
+}
+
+#furnish-midpoint{
+    background-image: url(/photos/furnishing.jpg);
+}
+
+#furnish-thumbnails span{
+    height: 120px;
+    width: 3px;
+}
+
+#real-el {
+    background-image: url(/photos/Architecture-1.jpg);
+}
+
+#real-midpoint {
+    background-image: url(/photos/Architecture-2.jpg);
+}
+
+#intern-landing {
+    background-image: url(/photos/internship01.jpg);
+}
+
+#skills-landing {
+    background-image: url(/photos/learning.jpg);
+}
+
+
+.skills-landing{
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.skills-landing:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.skills-landing .content{
+    width: 100%;
+}
+
+.skills-landing .content .skillscity-berge img{
+    width: 50%;
+}
+
+.all-landing h1{
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.all-landing p, .skills-landing p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.all-landing a, .skills-landing a{
+    font-size: 1.3rem;
+}
+
+#introduction .intros{
+    padding: 20px 0;
+}
+
+#introduction .intros h2{
+    text-align: center;
+    color: #073c4d;
+}
+
+#introduction .intros p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.solar-app .identity a img{
+    width: 30px;
+}
+
+.error-line{
+    border: 4px solid #1295bd;
+}
+
+#solar-quote .sample-rating {
+    width: 35%;
+}
+
+#quote .load-rating, #quote .load-data{
+    width: 30%;
+}
+
+#quote .load-total-rating{
+    width: 65%;
+}
+
+#quote .solar-app .saved-loads {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+#quote .solar-app #ul-el{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#quote .solar-app #ul-el li{
+    line-height: 1.6rem;
+    color: rgb(201, 192, 192);
+}
+
+#quote .solar-app .app-display{
+    border: 2px solid #fff;
+}
+
+#quote .solar-app .app-display i{
+    width: 8%;
+}
+
+#quote .solar-app .app-display .result-label{
+    width: 50%;
+    padding: 0 5px;
+}
+
+#quote .solar-app .app-display .spec-result{
+    width: 32%;
+}
+
+#about-landing h1{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#skills-landing .img-holder img{
+    width: 60%;
+}
+
+#skillscity p{
+    font: .8rem cursive;
+}
+
+#skillscity span{
+    font-weight: bold;
+}
+
+#skillscity a{
+    color: #fff;
+    background-color: #16ac48;
+}
+
+#service-links{
+    height: 70vh;
+}
+
+#service-links .service-link {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#service-links .service-link a{
+    display: flex;
+    align-items: center;
+    border: 2px solid #073c4d;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#service-links .service-link a span{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 10px;
+    max-width: 80%;
+}
+
+
+@media all and (min-width: 760px){
+    ::-webkit-scrollbar {
+        display: initial;
+        width: 8px;
+        background-color: #073c4d;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background-color: #1295bd;
+    }
+
+    #quote .quotation-content {
+        flex: 1;
+    }
+
+    #quote .solar-app-container {
+        flex: 2;
+    }
+
+    #quote .solar-app{
+        width: 90%;
+    }
+
+    #quote .solar-app .saved-loads {
+        max-height: 120px;
+        overflow-y: scroll;
+    }
+
+    #quote .solar-app .app-display {
+        margin-left: 10px;
+    }
+
+    .all-landing .content{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        height: 100%;
+    }
+
+    .all-landing h1 {
+        text-align: left;
+        font-size: 5rem;
+    }
+
+    .all-landing p, .skills-landing p{
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .all-landing a{
+        font-size: 1.5rem;
+    }
+
+    #skills-landing {
+        background-image: url(/photos/how-to.jpg);
+    }
+
+    .skills-landing:before {
+        background-image: linear-gradient(to left, rgb(2, 29, 87), rgb(151, 150, 150, 0.3));
+    }
+
+    .skills-landing .content{
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    #skills-landing .img-holder img {
+        width: 40%;
+    }
+
+    #service-links{
+        height: 50vh;
+    }
+
+    #service-links .service-link {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #service-links .service-link a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    #service-links .service-link a span {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #service-links .service-link:hover{
+        height: 160px;
+        border: 3px solid #073c4d;
+    }
+
+    #introduction .intros h2{
+        font-size: 3rem;
+    }
+
+    #introduction .intros p {
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.9rem;
+    }
+
+}
+
+#company #overview .overview-top .cases .case img {
+    width: 100%;
+}
+
+#company #overview .overview-top .cases .case h1 {
+    width: 100%;
+    padding: 5px;
+    color: #1295bd;
+}
+
+#company-base .view-box{
+    flex: 1;
+    margin: 10px;
+}
+
+#company-base .view-box .base-view{
+    border: 2px solid var(--white);
+    height: 150px;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+#company-base .view-box .top-view{
+    position: relative;
+}
+
+#company-base .view-box .top-view .title{
+    border: 2px solid var(--white);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#company-base .view-box .top-view .icon{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: -13px;
+    right: 0;
+}
+
+
+#company-mid .overview-showcase{
+    height: 50vh;
+    background-image: url(../photos/jking-office.jpg);
+}
+
+#company-mid .overview-showcase .caption{
+    position: relative;
+    background-color: rgb(201, 197, 197, 0.3);
+    height: 100%;
+}
+
+#company-mid .overview-showcase .caption h1{
+    text-shadow: -2px 1px rgb(2, 2, 2, 0.7);
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+@media all and (min-width: 760px){
+
+    #company #overview .overview-top .cases .case{
+        position: relative;
+        margin: 0 10px;
+    }
+
+    #company #overview .overview-top .cases .case .case-narrative{
+        width: 50%;
+    }
+
+    #company #overview .overview-top .cases .case .flex-to-right{
+        order: 2;
+    }
+
+    #company #overview .overview-top .cases .case h1{
+        position: absolute;
+        margin: auto;
+        left: 45%;
+        top: 42%;
+        width: fit-content;
+        padding: 20px;
+        background-color: #1295bd;
+        color: #fff;
+    }
+
+    #company #overview .overview-top .cases .case p{
+        line-height: 1.5rem;
+    }
+
+    #company #overview .overview-top .cases .case .case-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seperator{
+        height: 20vh;
+    }
+
+    #company-mid .overview-showcase {
+        height: 100vh;
+    }
+
+    #company-mid .overview-showcase .caption h1 {
+        bottom: 10px;
+        right: 10px;
+        left: unset;
+    }
+}
+
+#adds .carousel-fade-4{
+    height: 20vh;
+}
+
+#adds .carousel-lg .carousel-fade-4 span{
+    font-weight: bold;
+}
+
+#adds .client-content {
+    position: relative;
+}
+
+@media all and (min-width: 760px){
+    #adds .client-content {
+        margin: 0 5px;
+    }
+}
+
+.all-service-content .service-menu .service-links h4{
+    color: #fff;
+}
+
+@media all and (min-width: 760px){
+    .all-service-content .page-one {
+            height: 100vh;
+    }
+
+    .all-service-content .page-two .line img {
+        height: 400px;
+    }
+
+    .all-courses .course-main-bg{
+        background-color: #0b0b3b;
+    }
+}
+
+.all-service-content .request form input, .all-service-content .request form textarea{
+    outline: none;
+    border: 1px solid #1295bd;
+    font-size: 1.1rem;
+}
+
+.all-service-content .request form textarea{
+    resize: none;
+    overflow: scroll;
+}
+
+
+
+/*about page*/
+#about-landing{
+    background-image: url(../photos/marketing-consultancy.jpg);
+}
+
+#about-landing h1{
+    z-index: 555;
+}
+
+#all-about .about-top .intro{
+    line-height: 2rem;
+}
+
+#all-about .about-mid-left img{
+    width: 100%;
+}
+
+#all-about .about-base-left{
+    width: 200px;
+    height: 150px;
+    background-image: url(../photos/profile.jpg);
+}
+
+#all-about  .follow a{
+    color: rgba(28, 102, 240, 0.7);
+    font-weight: 16pt !important;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+/* training pages */
+.training-header h3{
+    text-align: center;
+}
+
+.training-header .training-link{
+    justify-content: center;
+}
+
+@media all and (min-width: 760px){
+    .training-header h3 {
+        text-align: left;
+    }
+
+    .training-header .training-link {
+        justify-content: end;
+    }
+}
+
+
+/* skillscity page begins */
+.all-courses .courses{
+    position: relative;
+}
+
+.all-courses .courses img{
+    width: 100%;
+}
+
+.all-courses .anticipated-title{
+    padding: 50px 0 10px 0;
+}
+
+
+/* super-slide begins */
+.all-courses .anticipated-slides{
+    overflow: hidden;
+}
+
+.all-courses .anticipated-slides .slide-btn{
+    display: none;
+}
+
+.all-courses .anticipated-slides #prev-btn:checked~.anticipated-slider {
+    transform: translateX(0);
+}
+
+.all-courses .anticipated-slides #next-btn:checked~.anticipated-slider {
+    transform: translateX(-50%);
+}
+
+.all-courses .anticipated-slider{
+    width: 200%;
+    animation: super-slide 15s infinite ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.all-courses .anticipated-slider:hover{
+    animation: none;
+}
+
+@keyframes super-slide {
+    0%{
+        transform: translatex(0);
+        opacity: 0;
+    }
+
+    5%{
+        opacity: 70%;
+    }
+
+    45%{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    50% {
+        transform: translatex(-50%);
+        opacity: 90%;
+    }
+
+    95% {
+        transform: translatex(-50%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+.all-courses .course-sub-bg{
+    position: relative;
+}
+
+.all-courses .skillscity-berge{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.all-courses .skillscity-berge img{
+    width: 80px;
+}
+
+.all-courses .anticipated-slider .slide{
+    width: 100%;
+}
+
+.all-courses .anticipated-slider .slide-icon{
+    position: absolute;
+    font-size: 2.5rem;
+    padding: 20px;
+    color: rgba(28, 102, 240, 0.7);
+    cursor: pointer;
+}
+
+.all-courses .anticipated-slider .next{
+    margin: auto 0;
+    top: 25%;
+    right: 10px;
+}
+
+.all-courses .anticipated-slider .prev {
+    margin: auto 0;
+    top: 25%;
+    left: 10px;
+}
+
+.all-courses .anticipated-slider .actual-slide-btn{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+}
+
+.all-courses .anticipated-slider .actual-slide-icon {
+    font-size: 10px;
+    padding: 5px;
+    background-color: rgba(28, 102, 240, 0.7);
+    color: rgba(28, 102, 240, 0.7);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.all-courses .anticipated-slider .actual-slide-icon.on-view{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media all and (min-width: 760px) {
+
+    .all-courses .anticipated-slider .slide-icon{
+        opacity: 10%;
+    }
+
+    .all-courses .anticipated-slider .slide-icon:hover {
+        opacity: 100%;
+    }
+
+    .all-courses .anticipated-slider .actual-slide-btn{
+        bottom: 2%;
+        top: unset;
+        left: 48%;
+    }
+
+    .all-courses .anticipated-slider .slide .courses .flyer{
+        width: 50%;
+    }
+
+    .all-courses .anticipated-slider .slide-icon{
+        padding: 50px;
+    }
+
+    .all-courses .anticipated-slider .next {
+        top: 40%;
+        right: 10px;
+    }
+
+    .all-courses .anticipated-slider .prev {
+        top: 40%;
+        left: 10px;
+    }
+
+    .all-courses .anticipated-slider .course-summary{
+        font-size: 24px;
+    }
+
+    .anticipated-slider .flyer img {
+        width: 300px;
+    }
+
+    .anticipated-and-skillscity .skillscity-tips .about-skillscity{
+        height: 100%;
+    }
+}
+/* super-slide ends */
+.anticipated-and-skillscity .skillscity-tips{
+    height: 100vh;
+}
+
+.anticipated-and-skillscity .skillscity-tips .about-skillscity{
+    height: 80%;
+    width: 92%;
+}
+
+.anticipated-and-skillscity .skillscity-tips .statements{
+    margin-bottom: 20px;
+}
+
+.anticipated-and-skillscity .skillscity-tips .about-skillscity span{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(138, 135, 135);
+}
+
+.exco-berge{
+    margin: 5px 0;
+}
+
+.exco .exco-berge .face{
+    padding: 20px;
+}
+
+.exco .exco-berge span{
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.exco .exco-berge .face .face-holder{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.exco .exco-berge .face .face-holder.one{
+    background-image: url(/photos/profile.jpg);
+}
+
+.exco .exco-berge .face .face-holder.two {
+    background-image: url(/photos/Amazing.jpeg);
+}
+
+@media all and (min-width: 760px){
+    .exco-berge{
+        margin: 0 5px;
+    }
+
+    .exco .exco-berge span{
+        width: 2px;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    .anticipated-and-skillscity .skillscity-tips {
+        height: initial;
+    }
+
+    .anticipated-and-skillscity .skillscity-tips .about-skillscity {
+        height: initial;
+        width: 92%;
+    }
+}
+
+/* validation  form */
+.validation input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(28, 102, 240, 0.7);
+}
+
+.validation .validate-body .data{
+    position: relative;
+}
+
+.validation .validate-body .data i{
+    position: absolute;
+    margin: auto;
+    right: 5px;
+}
+
+.validation .val-error, .validation .val-success{
+    visibility: hidden;
+}
+
+.error i.far.fa-times{
+    visibility: visible;
+}
+
+.success i.far.fa-check {
+    visibility: visible;
+}
+
+/* skillscity page ends */
+
+
+/* to be removed*/
+
+#subscribe form input{
+    border: none;
+}
+
+footer{
+    background-image: url(../photos/footer02.jpg)
+}
+
+footer .follow a{
+    color: var(--white);
+    font-weight: 16pt !important;
+    font-size: 16pt;
+}
+
+#address-map{
+    height: 40vh;
+    position: relative;
+}
+
+.map-viewer{
+    display: none;
+}
+
+.add-map{
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.map-content{
+    height: 100%;
+    position: relative;
+}
+
+.add-map-btn.close-map{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16pt;
+    padding: 5px 10px;
+    background-color: rgb(28, 102, 240, 0.7);
+}
+
+.add-map-btn{
+    cursor: pointer;
+}
+
+#add:checked ~ #address{
+    display: flex;
+}
+
+#locate:checked ~ #map{
+    display: block;
+}
+
+form input{
+    outline: none;
+}
+
+form textarea{
+    outline: none;
+    resize: none;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+footer .follow a:hover{
+    border: 2px solid #fff;
+    border-radius: 10px;
+}

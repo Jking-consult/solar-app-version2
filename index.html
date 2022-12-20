@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="/jking_developement_tools/jking-default-style.css">
+    <link rel="stylesheet" href="/jking_developement_tools/jking-theme-maker.css">
+    <link rel="stylesheet" href="/jking_developement_tools/style.css">
+    <link rel="stylesheet" href="Fontawesome_pro_v6/css/all.css">
+</head>
+
+
+
+<body id="" class="">
+
+    
+
+    <section id="solar-quote" class="container-fluid single-flex py10">
+        <h5 class="font-bold font-deep-mild font-s-16 text-center">We have provided you with an app that can help you
+            determine the capacity of solar/inverter system you need.</h5>
+    
+        <div class="quote-note container-fluid flat-flex ai-center font-regular bgp-mild font-white font-s-14">
+            <div class="solar-readme container single-flex p-5">
+                <p class="font-bold font-s-14">To use the app...</p>
+                <p><strong class="font-deep-mild">Step 1:</strong> Check the input power rating printed on the device(s) you
+                    want to power and type the device name and the rating on the corresponding field on our app following
+                    the pattern below</p>
+    
+    
+                <p class="font-deep-mild font-bold">Example:</p>
+                <div class="solar-example single-flex container-fluid font-bold py-5">
+                    <div id="app-line" class="container-fluid single-flex ai-center py-5">
+                        <input type="text" name="" id="" class="test container-fluid p-5 border-sm-round"
+                            value="Name of test" readonly>
+                        <div class="test-calc container-fluid super-flex ai-center my-10">
+                            <input type="" name="" id="test" class="test-a text-right p-5 border-sm-round container"
+                                value="multiplier" readonly>
+                            <p>X</p>
+    
+                            <input type="" name="" id="test" class="test-b text-right p-5 border-sm-round container"
+                                value="test" readonly>
+                            <p>W</p>
+                            <p class="mx-5">=</p>
+    
+                            <input type="" name="" id="actual" class="test-c text-right p-5 border-sm-round container"
+                                value="actual test" readonly>
+                            <p>W</p>
+    
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="solar-readme container p-5">
+                <div class="step2">
+                    <p class="font-regular"><strong class="font-deep-mild">Step 2:</strong> Click the "save load" button to
+                        store your
+                        loads
+                        temporarily.</p>
+                    <p class="font-regular">Then specify the maximum number of hours you want to keep your inverter running
+                    </p>
+                </div>
+    
+                <div class="runtime-split container-fluid super-flex ai-center">
+                    <div class="hours container-fluid super-flex ai-center flex-ratio-1 mx-5">
+                        <input type="" max="24" min="1" name="" id=""
+                            class="container-fluid test-runtime-value text-right p-5 border-sm-round" value="8" readonly>
+                        <p class="font-s-10">Hrs/Day</p>
+                    </div>
+                    <div class="days container-fluid super-flex ai-center flex-ratio-1 mx-5">
+                        <input type="" max="5" min="1" name="" id=""
+                            class="container test-runtime-vale text-right p-5 border-sm-round" value="1" readonly>
+                        <p class="font-s-10">Days without Charging</p>
+                    </div>
+                </div>
+    
+                <p><strong class="font-deep-mild">Step 3:</strong> Click the "Generate Specification" button. Then your
+                    specification will be splited out on the app screen</p>
+    
+    
+    
+    
+            </div>
+    
+            <!-- <div class="solar-readme container-fluid p-5">
+                    
+                    
+                </div> -->
+    
+            <div class="solar-readme container single-flex p-5">
+                <p><strong class="font-deep-mild">Step 4:</strong> Click the "Submit Specification" button and your
+                    specificattion message appears automatically on the "I need a quote" message box</p>
+                <p><strong class="font-deep-mild">Step 5:</strong> Provide preferred reply chanel and click on the "Get a
+                    quote" button
+                </p>
+                <p><strong class="font-deep-mild">Step 6:</strong> Expect our response as soon as possible.</p>
+    
+                <div class="solar-note container-fluid font-regular p-5">
+                    <p class="py-5"><strong><em>Note: Input Power (W) = Input Voltage (V) X Input Amps (A) when Input Power
+                                is not
+                                stated on the device. Please ensure that it is the input power rating you typed into our
+                                app.</em></strong></p>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    </section>
+    
+    <section id="quote" class="quotation container-fluid flat-flex py-10">
+        <div class="solar-app-container container single-flex p-5">
+            <div
+                class="solar-app container-fluid single-flex border-lg-round bgp-deep-mild font-white surround-shadow p-10">
+                <div class="app-title font-regular text-center font-s-16">
+                    <h3>Solar-Inverter Calculator</h3>
+                    <h6>Maximum Inverter Spec - 50KVA</h6>
+                </div>
+                <div class="app-body container-fluid flat-flex font-bold py-10">
+                    <div class="container-fluid single-flex">
+                        <div class="runtime-note container-fluid my">
+                            <p class="font-s-10">Loads (e.g your light bulbs, fan, etc.)</p>
+                        </div>
+                        <div id="app-input" class="container-fluid single-flex my-5">
+                            <div id="app-line" class="container-fluid single-flex ai-center py-5">
+                                <input type="text" name="" id="load-name"
+                                    class="load-name container-fluid p-5 border-sm-round" onkeyup="loadCalc()"
+                                    placeholder="TV">
+                                <div class="load-calc container-fluid super-flex ai-center my-10">
+                                    <input type="number" name="" id="load-multiple"
+                                        class="load-data text-right p-5 border-sm-round" onkeyup="loadCalc()"
+                                        placeholder="10">
+                                    <p>X</p>
+    
+                                    <input type="number" name="" id="load-rating"
+                                        class="load-data text-right p-5 border-sm-round" onkeyup="loadCalc()"
+                                        placeholder="70">
+                                    <p>W</p>
+                                    <p class="mx-5">=</p>
+    
+                                    <input type="number" name="" id="actual-load"
+                                        class="load-data text-right p-5 border-sm-round" placeholder="700" readonly>
+                                    <p>W</p>
+    
+    
+                                </div>
+    
+                                <p class="load-error-top font-s-12 font-regular font-white py-5"></p>
+    
+                                <div class="save-load container-fluid">
+                                    <button id="save-load-btn"
+                                        class="theme-btn btn-md super-flex jc-center ai-center mx-5">Save Load<i
+                                            class="far fa-plus font-s-14 single-flex px-5"></i></button>
+                                </div>
+    
+    
+    
+                            </div>
+    
+                        </div>
+    
+                        <div id="saved-loads" class="saved-loads container-fluid px-5">
+                            <ul id="ul-el" class="container-fluid text-right font-regular p-5">
+    
+                            </ul>
+                        </div>
+    
+                        <div class="total-load container-fluid super-flex ai-center">
+                            <div id="load-w" class="container-fluid super-flex ai-center flex-ratio-1 p-10">
+                                <p class="font-s-10">Total Load:</p>
+                                <input type="number" name="" id="actual-load-value"
+                                    class="load-total-rating text-right p-5 border-sm-round" placeholder="700" readonly>
+                                <p id="alv-unit">W</p>
+                            </div>
+                            <div id="load-va" class="container-fluid super-flex ai-center flex-ratio-1 p-10">
+                                <p class="font-s-10">Total Load:</p>
+                                <input type="number" name="" id="actual-load-kva"
+                                    class="load-total-rating text-right p-5 border-sm-round" placeholder="900" readonly>
+                                <p id="alk-unit">VA</p>
+                            </div>
+                        </div>
+    
+                        <div class="load-runtime container-fluid single-flex ai-center py-5">
+                            <div class="runtime-note container-fluid py-5">
+                                <p class="font-s-10">Backup Strength (More backup, more cost)</p>
+                            </div>
+    
+                            <div class="runtime-split container-fluid super-flex ai-center">
+                                <div class="hours container-fluid super-flex ai-center flex-ratio-1 mx-5">
+                                    <input type="number" max="24" min="1" name="" id="hr"
+                                        class="container-fluid load-runtime-value text-right p-5 border-sm-round"
+                                        onkeyup="backUp()" placeholder="8">
+                                    <p class="font-s-10">Hrs/Day</p>
+                                </div>
+                                <div class="days container-fluid super-flex ai-center flex-ratio-1 mx-5">
+                                    <input type="number" max="5" min="1" name="" id="day"
+                                        class="container load-runtime-vale text-right p-5 border-sm-round"
+                                        onkeyup="backUp()" placeholder="1">
+                                    <p class="font-s-10">Days without Charging</p>
+                                </div>
+    
+                            </div>
+    
+                            <p class="load-error-mid font-s-10 font-regular font-white py-5"></p>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="app-display container-fluid single-flex my-10 p-5">
+                        <div class="spec-note container-fluid py-5">
+                            <h4>Recommended Specification</h4>
+                        </div>
+                        <div class="batry-spec container-fluid super-flex ai-center py-5">
+                            <i class="far fa-car-battery px-5"></i>
+                            <p class="spec-label container-fluid">Battery Spec</p>
+                            <p>200AH/12V</p>
+                        </div>
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-lightbulb-on px-5"></i>
+                            <p class="result-label load-name">Inverter</p>
+                            <input type="" name="" id="invtr" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="1" readonly>
+                            <p id="i-rating">KVA</p>
+                        </div>
+                        <!-- <div class="results container-fluid super-flex ai-center py-5">
+                                <i class="far fa-car-battery px-5"></i>
+                                <p class="result-label load-name"></i>Battery Bank</p>
+                                <input type="" name="" id="batr-bank" class="spec-result text-right p-5 border-sm-round" placeholder="800" readonly>
+                                <p>AH</p>
+                            </div> -->
+    
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-battery-three-quarters px-5"></i>
+                            <p class="result-label load-name">DC Volt</p>
+                            <input type="" name="" id="btry-volt" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="12" readonly>
+                            <p>V</p>
+                        </div>
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-car-battery px-5"></i>
+                            <p class="result-label load-name">No. of Batteries</p>
+                            <input type="" name="" id="nbtry" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="4" readonly>
+                            <p></p>
+                        </div>
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-battery-bolt px-5"></i>
+                            <p id="chrg-label" class="result-label load-name">Charge Contr.</p>
+                            <input type="" name="" id="chrg" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="30" readonly>
+                            <p class="px-5">A</p>
+                        </div>
+                        <!-- <div class="results container-fluid super-flex ai-center py-5">
+                                <i class="far fa-solar-panel px-5"></i>
+                                <p class="result-label load-name">Solar Bank</p>
+                                <input type="" name="" id="solr" class="spec-result text-right p-5 border-sm-round" placeholder="600" readonly>
+                                <p class="px-5">W</p>
+                            </div> -->
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-solar-panel px-5"></i>
+                            <p class="result-label load-name">Solar Panel</p>
+                            <input type="" name="" id="solr" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="150" readonly>
+                            <p class="px-5">W</p>
+                        </div>
+                        <div class="results container-fluid super-flex ai-center py-5">
+                            <i class="far fa-solar-panel px-5"></i>
+                            <p class="result-label load-name">No. of Panel(s)</p>
+                            <input type="" name="" id="nsolr" class="spec-result text-right p-5 border-sm-round"
+                                placeholder="1" readonly>
+                        </div>
+                        <div id="app-warning" class="results container-fluid super-flex ai-start py-5">
+                            <i class="far fa-info-circle font-warning"></i>
+                            <p id="desclaimer" class="font-s-10 font-regular px-10"> This App only gives the closest
+                                recommendations. Results are subject to change.</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="spec-buttons container-fluid flat-flex py-10">
+                    <p class="load-error-base font-s-12 font-regular font-white py-5"></p>
+    
+                    <div class="app-btn-container container-fluid py-5">
+                        <button id="calc-btn" class="theme-btn btn-lg-padded font-s-16 single-flex font-regular">Generate
+                            Specification</button>
+                    </div>
+                    <div class="app-btn-container container-fluid py-5">
+                        <button id="submit-btn" class="theme-btn btn-lg-padded font-s-16 single-flex font-regular">Submit
+                            Recommendation</button>
+                    </div>
+                </div>
+                <div class="identity container-fluid super-flex ai-center jc-end py-5 font-regular">
+                    <p class="container-fluid text-right mx-5">developed by</p>
+                    <a href="www.jossamkingmulticonsult.com" class="">
+                        <img src="/photos/Jking.png" class="" alt="">
+                    </a>
+                    <div class="dev-batch">
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    
+        <div class="quotation-content container single-flex font-regular py-10">
+    
+            <form action="" id="quote-form" class="container single-flex p-10">
+                <div class="quote-title font-bold font-s-16 font-mild p-5">
+                    <p>I need a quote</p>
+                </div>
+                <textarea name="" id="my-quote" class="container-fluid px-5 py-10 border-sm-round font-semibold font-s-12"
+                    cols="30" rows="7" placeholder="Please give detail of what you want us to do for you"></textarea>
+                <p class="py-5 font-mild font-bold">Reply Channel</p>
+                <input type="text" name="Reply Channel" id="" class="container-fluid px-5 py-10 border-sm-round"
+                    placeholder="Email or Phone number (WhatsApp)">
+                <button id="quote-btn" class="theme-btn-2 btn-lg-padded font-s-18 single-flex my-10">Get a Quote</button>
+            </form>
+    
+            <!--<div class="container single-flex">
+                        <p class="font-s-18 text-center">Thanks for trying us out!<br>We promise to deliver satisfactrily.</p>
+                        <button id="back-msg" class="theme-btn-2 btn-md-padded my-5">OK</button>
+                    </div>-->
+    
+        </div>
+        <a href="www.jossamkingmulticonsult.com" class="theme-btn-2 btn-md-padded m-10">Visit site</a>
+    </section>
+
+
+    
+    <script src="/jking_developement_tools/solar-app.js"></script>
+    
+
+
+</body>
+
+
+</html>
